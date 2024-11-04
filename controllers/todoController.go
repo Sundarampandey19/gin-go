@@ -30,19 +30,19 @@ func CreateTodo(c *gin.Context){
 }
 
 func GetTodos(c *gin.Context){
-	c.JSON(http.StatusCreated, gin.H{"todo_id" :"Send you some samosa"})
+	c.JSON(http.StatusCreated, gin.H{"todo_id" :"Returns all the todos"})
 
 
 }
 
 func UpdateTodo(c *gin.Context){
-	c.JSON(http.StatusCreated, gin.H{"todo_id" :"Send you some samosa"})
+	c.JSON(http.StatusCreated, gin.H{"todo_id" :"request to update todos"})
 
 
 }
 
 func DeleteTodo(c *gin.Context){
-	c.JSON(http.StatusAccepted, gin.H{"todo_id" :"Send you some samosa"})
+	c.JSON(http.StatusAccepted, gin.H{"todo_id" :"Request to delete a todo"})
 
 
 }

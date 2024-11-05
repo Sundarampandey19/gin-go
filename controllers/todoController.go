@@ -14,6 +14,7 @@ import (
 func CreateTodo(c *gin.Context){
 	userId, _ := c.Get("userId")
 	var todo models.Todo
+	
 	if err:= c.BindJSON(&todo); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error" : "Invalid Request"})
 		return

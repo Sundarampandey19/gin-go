@@ -7,6 +7,7 @@ import (
 	"todo/models"
 
 	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
@@ -31,7 +32,18 @@ func CreateTodo(c *gin.Context){
 }
 
 func GetTodos(c *gin.Context){
-	c.JSON(http.StatusCreated, gin.H{"todo_id" :"Returns all the todos"})
+	// trying to understand how 
+	// to write controllers in go project
+
+	// take the user id
+	// and  based of that pull all the todos from the database
+
+	userId, err := c.Get("userId")
+
+
+
+
+	
 
 
 }
